@@ -1,0 +1,218 @@
+/* Naranja: ee5a27 */
+/* Body: ececec */
+/* Gris Oscuro: 5d5d5d */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ececec;
+}
+header .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 30px;
+  background-color: #ee5a27;
+}
+header .top .top-left {
+  margin-left: 80px;
+}
+header .top .top-left a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 10px;
+  transition: 0.5s all;
+}
+header .top .top-left a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+header .top .top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 80px;
+}
+
+header .top .top-right .telefono {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header .top .top-right .telefono i {
+  font-size: 20px;
+}
+header .top .top-right .telefono p {
+  margin: 0 5px;
+  font-size: 10px;
+}
+
+header .top .top-right .redes-sociales a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  font-size: 21px;
+}
+
+/* - Middle - */
+
+header .middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+header .middle .menu-hamb {
+  display: none;
+}
+
+header .buscador {
+  position: relative;
+  background-color: red;
+}
+
+header .buscador input {
+  width: 750px;
+  padding: 15px 20px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+header .buscador button {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* - Bottom - */
+
+header .bottom {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+header .bottom a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+header .menu-desplegable {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header .top .top-right,
+  header .top .top-left {
+    margin: 0;
+  }
+  header .middle {
+    width: 100%;
+  }
+  header .buscador input {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .top .top-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .top .top-right .telefono {
+    margin: 10px 0;
+  }
+  header .middle {
+    justify-content: space-around;
+  }
+
+  header .middle .buscador-btn {
+    display: flex;
+    align-items: center;
+  }
+  header .middle .menu-hamb {
+    display: flex;
+    margin: 0 15px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 28px;
+  }
+  header .buscador input {
+    width: 50vw;
+  }
+  header .bottom {
+    display: none;
+  }
+  header .menu-desplegable {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    transition: 0.5s all;
+  }
+  header .menu-desplegable a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 10px;
+    font-weight: 500;
+  }
+  header .show {
+    height: 150px;
+
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all;
+  }
+}
+
+@media (max-width: 425px) {
+  header .top .top-left,
+  header .top .top-right .telefono p {
+    display: none;
+  }
+  header .top .top-right {
+    flex-direction: row;
+  }
+
+  header .middle {
+    flex-direction: column;
+  }
+  header .middle .buscador-btn {
+    width: 90%;
+  }
+  header .middle .buscador {
+    width: 80%;
+  }
+  header .middle .menu-hamb {
+    margin: 0 auto;
+  }
+  header .middle .buscador input {
+    width: 100%;
+  }
+}
