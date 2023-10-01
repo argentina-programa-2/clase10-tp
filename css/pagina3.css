@@ -175,3 +175,49 @@ a:hover{
 .imagen-zoom:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 1800px){
+
+  .button {
+    width: 300px;
+  }
+  #Img-Certificado{
+    height:200px;
+    width :400px;
+
+  }
+
+}
+
+@media (max-width: 1500px){
+
+  .button {
+    width: 260px;
+  }
+
+}
+  @media (max-width: 912px){
+      .contenedor{
+        display: block;
+        width: 100%;
+      }
+    .detalle_curso{
+      margin-top: 15px;
+      margin-left: 5%;
+      width: 90%;
+      background-color: #ffffff;;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .detalle_aside{
+      display: flex;
+      width: 92%;
+      margin-left: 3%;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+ 
